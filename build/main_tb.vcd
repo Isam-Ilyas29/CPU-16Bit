@@ -1,5 +1,5 @@
 $date
-  Tue Oct 27 19:49:46 2020
+  Tue Oct 27 21:23:46 2020
 $end
 $version
   GHDL v0
@@ -13,14 +13,18 @@ $scope module std_logic_1164 $end
 $upscope $end
 $scope module numeric_std $end
 $upscope $end
-$scope module and_gate_tb $end
+$scope module full_adder_tb $end
 $var reg 1 ! a $end
 $var reg 1 " b $end
-$var reg 1 # y $end
-$scope module and_gate_instance $end
-$var reg 1 $ a $end
-$var reg 1 % b $end
-$var reg 1 & y $end
+$var reg 1 # cin $end
+$var reg 1 $ sum $end
+$var reg 1 % cout $end
+$scope module full_adder_instance $end
+$var reg 1 & a $end
+$var reg 1 ' b $end
+$var reg 1 ( cin $end
+$var reg 1 ) sum $end
+$var reg 1 * cout $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
@@ -31,23 +35,63 @@ $enddefinitions $end
 0$
 0%
 0&
+0'
+0(
+0)
+0*
 #50000000
-1"
-1%
+1#
+1$
+1(
+1)
 #100000000
+1"
+0#
+1'
+0(
+#150000000
+1#
+0$
+1%
+1(
+0)
+1*
+#200000000
 1!
 0"
+0#
 1$
 0%
-#150000000
-1"
-1#
-1%
 1&
-#200000000
+0'
+0(
+1)
+0*
+#250000000
+1#
+0$
+1%
+1(
+0)
+1*
+#300000000
+1"
+0#
+1'
+0(
+#350000000
+1#
+1$
+1(
+1)
+#400000000
 0!
 0"
 0#
 0$
 0%
 0&
+0'
+0(
+0)
+0*

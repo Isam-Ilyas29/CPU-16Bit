@@ -3,17 +3,16 @@ use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
 
-entity and_gate is
+entity full_adder is
     port (
-        -- Input
-        a, b : in std_logic;
-
-        -- Output
-        y    : out std_logic
+        a, b, cin : in std_logic;
+        
+        sum, cout  : out std_logic
     );
 end entity;
 
-architecture and_gate_arch of and_gate is
+architecture full_adder_arch of full_adder is
 begin
-    y <= a and b;
+    sum <= a xor b xor cin;
+    cout <= (a and b) or (a and cin) or (b and cin);
 end architecture;
