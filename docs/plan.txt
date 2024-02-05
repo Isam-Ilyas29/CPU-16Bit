@@ -1,0 +1,24 @@
+create a 16bit processor with an assembler and make a compiler for a simple programming language.
+
+steps to success:
+1) design the register file
+2) create the isa
+3) create a decoder
+4) create a concept of ram
+5) create the alu
+6) create the pipeline design
+7) create the control unit
+8) create program counter
+9) .... 
+
+
+
+
+
+1)
+
+REGISTERS: 
+
+General purpose registers (8):
+- R0, R1, R2, R3, R4, R5, R6 (all 16 bit)
+- F (flag register)
